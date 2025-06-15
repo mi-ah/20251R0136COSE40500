@@ -1,4 +1,4 @@
-//0603-2022320071-¾ÆÀÌ»ş-°úÁ¦-1
+//0603-1í•™ë…„-ê³¼ì œ-1
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,7 +22,7 @@ int main(void)
         st[i] = malloc(sizeof(STU));
     if (st == NULL)
     {
-        printf("¸Ş¸ğ¸® È°´ç ¿À·ù\n");
+        printf("ë©”ëª¨ë¦¬ í™œë‹¹ ì˜¤ë¥˜\n");
         exit(1);
     }
 
@@ -30,21 +30,21 @@ int main(void)
     st[0]->num = 0;
     st[0]->grade = 0.0;
 
-    printf("-------- ÇĞ»ı Á¤º¸ ÀÔ·Â (Á¾·á:0) ---------");
+    printf("-------- í•™ìƒ ì •ë³´ ì…ë ¥ (ì¢…ë£Œ:0) ---------");
     while (1)
     {
-        printf("\n¹øÈ£: "); scanf("%d", &st[x]->num);
+        printf("\në²ˆí˜¸: "); scanf("%d", &st[x]->num);
         if (st[x]->num == st[x - 1]->num)
         {
-            printf("µ¿ÀÏÇÑ µ¥ÀÌÅÍ Á¸Àç!\n");
+            printf("ë™ì¼í•œ ë°ì´í„° ì¡´ì¬!\n");
             continue;
         }
         if (st[x]->num == 0)
         {
             break;
         }
-        printf("ÀÌ¸§: "); scanf("%s", st[x]->name);
-        printf("ÇĞÁ¡: "); scanf("%f", &st[x]->grade);
+        printf("ì´ë¦„: "); scanf("%s", st[x]->name);
+        printf("í•™ì : "); scanf("%f", &st[x]->grade);
         if (st[x]->grade >= st[x - 1]->grade)
         {
             double highest_mark = st[x]->grade;
@@ -53,14 +53,14 @@ int main(void)
         x++;
     }
     
-    printf("-\n\n--------- ÀÜÃ¼ ÇĞ»ı Á¤º¸ ----------\n");
+    printf("-\n\n--------- ì”ì²´ í•™ìƒ ì •ë³´ ----------\n");
     for (int i = 1; i < x; i++)
     {
-        printf("\n¹øÈ£: %d, ÀÌ¸§: %s, ÇĞÁ¡: %.1f", st[i]->num, st[i]->name, st[i]->grade);
+        printf("\në²ˆí˜¸: %d, ì´ë¦„: %s, í•™ì : %.1f", st[i]->num, st[i]->name, st[i]->grade);
     }
 
-    printf("\n\n------- ÃÖ°í ÇĞÁ¡ ÇĞ»ı Á¤º¸ --------");
-    printf("\n¹øÈ£: %d, ÀÌ¸§: %s, ÇĞÁ¡: %.1f\n", st[result]->num, st[result]->name, st[result]->grade);
+    printf("\n\n------- ìµœê³  í•™ì  í•™ìƒ ì •ë³´ --------");
+    printf("\në²ˆí˜¸: %d, ì´ë¦„: %s, í•™ì : %.1f\n", st[result]->num, st[result]->name, st[result]->grade);
 
     for (int i = 0; i < sizeof(st) / sizeof(STU*); i++)
         free(st);
