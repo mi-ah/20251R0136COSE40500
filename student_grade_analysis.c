@@ -1,4 +1,4 @@
-//0527-2022320071-¾ÆÀÌ»ş-°úÁ¦-2
+//0527-1í•™ë…„-ê³¼ì œ-2
 
 #include <stdio.h>
 #include <string.h>
@@ -25,18 +25,18 @@ int main(void)
 	float mark, total_grade = 0.0;
 	double high_mark = 0.0;
 
-	printf("ÇĞ»ı ¼ö(ÃÖ´ë 10) : ");
+	printf("í•™ìƒ ìˆ˜(ìµœëŒ€ 10) : ");
 	scanf("%d", &num);
 
 	struct student stu[10];
 
 	for (i = 0; i < num; i++)
 	{
-		printf("\n¹øÈ£ : ");
+		printf("\në²ˆí˜¸ : ");
 		scanf("%d", &stu[i].stu_num);
-		printf("ÀÌ¸§ : ");
+		printf("ì´ë¦„ : ");
 		scanf("%s", stu[i].name);
-		printf("Á¡¼ö : ");
+		printf("ì ìˆ˜ : ");
 		scanf("%lf", &stu[i].grade);
 		
 		total_grade += stu[i].grade;
@@ -51,10 +51,10 @@ int main(void)
 		
 	}
 	for (i = 0; i < num; i++)
-		printf("\nÇĞ¹ø: %d,  ÀÌ¸§: %s,  ÇĞÁ¡: %.2f", stu[i].stu_num, stu[i].name, stu[i].grade);
+		printf("\ní•™ë²ˆ: %d,  ì´ë¦„: %s,  í•™ì : %.2f", stu[i].stu_num, stu[i].name, stu[i].grade);
 
-	printf("\n\nÆò±Õ ÇĞÁ¡ : %.2f", total_grade / num);
-	printf("\nÃÖ°í ÇĞÁ¡ : %.2f, ÀÌ¸§: %s\n", stu[x].grade, stu[x].name);
+	printf("\n\ní‰ê·  í•™ì  : %.2f", total_grade / num);
+	printf("\nìµœê³  í•™ì  : %.2f, ì´ë¦„: %s\n", stu[x].grade, stu[x].name);
 
 	return 0;
 }
