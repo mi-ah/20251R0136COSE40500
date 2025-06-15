@@ -1,4 +1,4 @@
-//0318 - 2022320071 - ¾ÆÀÌ»ş
+//0318 - 1í•™ë…„ ì‹¤ìŠµ
 
 #pragma warning(disable: 4996)
 #include <stdio.h>
@@ -10,12 +10,12 @@ int main()
 	const float TEMP = 0.55556;
 
 
-	printf("È­¾¾ ¿Âµµ ÀÔ·Â:");
+	printf("í™”ì”¨ ì˜¨ë„ ì…ë ¥:");
 	scanf("%f", &farrenh);
 
 	celcius = TEMP * (farrenh - 32);
 
-	printf("[È­¾¾ %.1fµµ] = [¼·¾¾ %.1fµµ]", farrenh, celcius);
+	printf("[í™”ì”¨ %.1fë„] = [ì„­ì”¨ %.1fë„]", farrenh, celcius);
 
 
 	return 0;
