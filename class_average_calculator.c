@@ -1,4 +1,4 @@
-//0415-2022320071-¾ÆÀÌ»þ-5
+//0415-1í•™ë…„ ê³¼ì œ
 
 #pragma warning (disable:4996)
 #include <stdio.h>
@@ -21,11 +21,11 @@ int main(void)
 		for (y = 0; y < STUDENTS; y++)
 			class_sum += marks[x][y];
 
-		printf("%d¹Ý ÇÐ»ýµéÀÇ Æò±Õ = %.2f\n", x+1, class_sum/STUDENTS);
+		printf("%dë°˜ í•™ìƒë“¤ì˜ í‰ê·  = %.2f\n", x+1, class_sum/STUDENTS);
 		all_sum += class_sum;
 	}
 	
-	printf("ÀüÃ¼ ÇÐ»ýµéÀÇ Æò±Õ = %.2f", all_sum / (CLASS*STUDENTS));
+	printf("ì „ì²´ í•™ìƒë“¤ì˜ í‰ê·  = %.2f", all_sum / (CLASS*STUDENTS));
 
 	return 0;
 }
