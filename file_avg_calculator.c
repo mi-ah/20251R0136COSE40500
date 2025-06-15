@@ -1,4 +1,4 @@
-//0610-2022320071-¾ÆÀÌ»þ-5
+//0610-1í•™ë…„ ê³¼ì œ
 
 #include <stdio.h>
 #pragma warning (disable:4996)
@@ -17,13 +17,13 @@ int main(void)
 		while (!feof(fp_in))
 		{
 			fscanf(fp_in, "%f %f %f", &num1, &num2, &num3);
-			printf("ÀÔ·Â°ª: %.2f %.2f %.2f\n", num1, num2, num3);
+			printf("Ã€Ã”Â·Ã‚Â°Âª: %.2f %.2f %.2f\n", num1, num2, num3);
 
 			avg = (num1 + num2 + num3) / 3;
-			printf("Æò±Õ: %.2f\n\n", avg);
+			printf("Ã†Ã²Â±Ã•: %.2f\n\n", avg);
 
 			if (fp_out != NULL)
-				fprintf(fp_out, "Æò±Õ: %.2f\n", avg);
+				fprintf(fp_out, "Ã†Ã²Â±Ã•: %.2f\n", avg);
 	
 		}
 	}
