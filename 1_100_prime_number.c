@@ -1,4 +1,4 @@
-//0408-2022320071-¾ÆÀÌ»þ-°úÁ¦
+//0408-1í•™ë…„ ê³¼ì œ
 
 #pragma warning (disable:4996)
 #include <stdio.h>
