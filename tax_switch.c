@@ -1,4 +1,4 @@
-//0401-2022320071-¾ÆÀÌ»ş
+//0401-1í•™ë…„ ê³¼ì œ
 
 #pragma warning (disable:4996)
 #include <stdio.h>
@@ -8,7 +8,7 @@ int main(void)
 	int tax, amount;
 	int num = 0;
 
-	printf("°ú¼¼ ±İ¾× ÀÔ·Â (´ÜÀ§ ¸¸¿ø) : ");
+	printf("ê³¼ì„¸ ê¸ˆì•¡ ì…ë ¥ (ë‹¨ìœ„ ë§Œì›) : ");
 	scanf("%d", &amount);
 
 	if (amount < 1000)
@@ -33,7 +33,7 @@ int main(void)
 			tax = (35 * amount) / 100;
 	}
 	
-	printf("¼Òµæ¼¼´Â %d¸¸¿øÀÔ´Ï´Ù", tax);
+	printf("ì†Œë“ì„¸ëŠ” %dë§Œì›ì…ë‹ˆë‹¤", tax);
 
 	return 0;
 }
