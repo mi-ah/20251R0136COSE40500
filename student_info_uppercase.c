@@ -1,4 +1,4 @@
-//0520-2022320071-¾ÆÀÌ»ş-°úÁ¦-1
+//0520-1í•™ë…„-ê³¼ì œ-1
 
 #include<stdio.h>
 #include<string.h>
@@ -11,7 +11,7 @@ main()
     do
     {
         count = 0;
-        printf("ÇĞ¹ø(8ÀÚ¸® :");
+        printf("í•™ë²ˆ(8ìë¦¬ :");
         gets(num);
 
         for (i = 0; i < strlen(num); i++)
@@ -24,11 +24,11 @@ main()
 
     } while (count != strlen(num));
 
-    printf("¿µ¹® ÀÌ¸§: ");
+    printf("ì˜ë¬¸ ì´ë¦„: ");
     gets(name);
 
-    printf("\nÇĞ¹ø (8ÀÚ¸®) : %s", num);
-    printf("\n¿µ¹® ÀÌ¸§: ");
+    printf("\ní•™ë²ˆ (8ìë¦¬) : %s", num);
+    printf("\nì˜ë¬¸ ì´ë¦„: ");
     while (name[j])
     {
         ch = name[j];
